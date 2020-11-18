@@ -1,1 +1,5 @@
+## Defected Balls Solution
 
+To solve the problem, we need to take advantage of the fact that the defective balls weigh 1 less gram than the non-defective balls. If we weigh n defective balls, the resulting weight will be n less than if the balls were non-defective. For example 5 defective balls would weigh 5 grams less than 5 non-defective balls. With this information, all we need to do is to take a different number of balls from each box.
+
+We can label each box from 1 to 10 and take from each box the number of balls equal to its label. So, from the first box take 1 ball, 2 from the second, 3 from the third, and so on. At the end of this process, you will have 1+2+3+4+5+6+7+8+9+10 = 55 balls, which if were non-defective should weigh 55 * 10 = 550g. The difference between this expected weight and the actual resulting weight tells us which box has the defective balls. For example, if the weight came out to be 545g, we know we weighed 5 defective balls since the difference between 550 and 545 is 5, which means that the box 5 has the defective balls.
